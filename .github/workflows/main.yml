@@ -36,6 +36,7 @@ jobs:
       - name: Setup KernelSU (Legacy)
         run: |
          curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -s legacy
+         sed -i 's|#include <uapi/linux/sched/types.h>|#include <linux/sched.h>|g' drivers/kernelsu/selinux/rules.c
           
       - name: Start Build (with log)
         run: |
