@@ -26,7 +26,7 @@ TC64="aarch64-linux-gnu-"
 TC32="arm-linux-gnueabi-"
 
 # ================= INFO =================
-KERNEL_NAME="Yoru"
+KERNEL_NAME="Mystrile"
 DEVICE="mi8937"
 
 # =============== DATE (WIB) ===============
